@@ -9,7 +9,7 @@ I ran the numbers for the government's sanction-based model, and the story remai
 ## 🚀 Interactive Dashboard
 
 I've deployed the simulation so you can run the scenarios yourself:
-👉 https://commongoodproject.github.io/keds-monte-carlo-simulation/
+👉 CLICK HERE TO ACCESS THE SIMULATOR
 
 ## The Two Realities
 
