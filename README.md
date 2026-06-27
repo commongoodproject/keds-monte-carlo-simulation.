@@ -1,4 +1,4 @@
-The Common Good: Questioning the Math of Reform
+#The Common Good: Questioning the Math of Reform
 I was looking at the government's recent employment reforms (HE 108/2025), and I couldn't make the numbers add up. It felt like the math was missing something fundamental.
 
 So, I built a Monte Carlo calculator to test it.
