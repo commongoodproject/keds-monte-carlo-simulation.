@@ -1,25 +1,36 @@
-# Dynamic Monte Carlo Simulation of Finnish Social Policy Reforms (HE 108/2025)
+The Common Good: Questioning the Math of Reform
+I was looking at the government's recent employment reforms (HE 108/2025), and I couldn't make the numbers add up. It felt like the math was missing something fundamental.
 
-This repository contains a stochastic Monte Carlo simulation framework (N=1,000 agents, 12–24 month tracking period) developed to evaluate the systemic cumulative costs and KEDS (Karolinska Exhaustion Disorder Scale) cognitive friction of modern Finnish employment service reforms.
+So, I built a Monte Carlo calculator to test it.
 
-## Abstract & The Core Anomaly
+I ran the numbers for the government's sanction-based model, and the story remained the same: it leads to a fiscal cliff. Then, I created a parallel "Option B" matching system, and those numbers came out rock solid. Now I’m stuck: Is my Python engine broken, or is the system itself fundamentally flawed?
 
-During initial runs modeling the standard sanction-based activation model (HE 108/2025), the simulation revealed an unexpected mathematical divergence: **while the model successfully generates direct fiscal savings via basic social assistance reductions (20–50%), the cumulative system costs spike exponentially at Month 4.**
+🚀 Interactive Dashboard
+I’ve deployed the simulation so you can run the scenarios yourself:
+👉 https://commongoodproject.github.io/keds-monte-carlo-simulation/
 
-This appears to occur because standard macroeconomic models assume linear human elasticity. When the simulation introduces cognitive load variables (KEDS score $\ge$ 19, biological threat-system activation), synchronous application quotas (4/month) under financial stress cease to produce matching employment. Instead, they trigger secondary acute crisis costs (evictions, acute psychiatric hospitalisations: avg. ≈€18,000 / event) shifted to municipal and healthcare budgets.
+The Two Realities
+This simulation isn't about opinions; it's about checking the math of two very different ways to run a society:
 
-* Total simulated 12-month net cost (Sanction Model): **~€27.7M** (778 severe crisis events)
-* Total simulated 12-month net cost (Option B / Common Good Sandbox): **~€4.5M** (0 severe crisis events)
+Model A (The Reform): This represents the current sanction-based activation model. It assumes that if you tighten the screws (punitive sanctions), employment will follow. My simulation shows this triggers a "biological threat response" (KEDS load), leading to catastrophic costs (evictions, acute psychiatric hospitalisations) around Month 4.
 
-## Option B: The "Common Good" Comparative Benchmark
+Model B (The Common Good): I built this as a control group. It replaces the "stick" with an A/B skills-matching system. The result? The costs stay stable, and the fiscal outcome is sustainable.
 
-To verify whether the anomaly was a bug in the code logic, an alternative benchmark ("Option B") was constructed using identical baseline populations. Option B replaces synchronous compliance tracking with asynchronous skills-matching and direct need-based credit incentives, eliminating administrative lag and threat-state cognitive paralysis.
+The Question:
 
-In this benchmark model, parameters remain mathematically stable across the 24-month lifecycle, and the net fiscal outcome aligns positively with public finance sustainability goals.
+Model A (Sanction-based): ~27.7 Million € cost.
 
-## Request for Peer Review
+Model B (Common Good): ~4.5 Million € cost.
 
-The simulation logic, statistical baseline parameters, and raw data outputs are published here for open scrutiny. **If there is a logical flaw in the KEDS load-resistance assumptions or the Python execution pipeline, peer feedback and pull requests are highly welcomed.**
+Am I crazy, or is the government's math missing the cost of human despair?
 
----
-*Data sources: THL, Kela statistical yearbooks, SOSTE, Karolinska Institutet KEDS validation studies, Finnish Government Proposal HE 108/2025.*
+Help me find the bug
+I need a second pair of eyes. This is an open-source project, and I genuinely cannot figure out if my code is hallucinating or if the current reform strategy is built on a delusion.
+
+The Engine (app.js): It’s a Monte Carlo engine that simulates 1,000 parallel realities of policy.
+
+The Data (/data/simulation_parameters.csv): These are the variables I used. If you think the costs are wrong, change them. The dashboard will update in real-time.
+
+Please, clone this, run the tests, and tell me if I’ve missed something. If this is a bug in my logic, I want to know. If it’s not... we have a bigger problem to talk about.
+
+Data-driven, human-centric. This is part of the "Common Good Project" infrastructure.
