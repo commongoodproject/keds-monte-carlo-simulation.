@@ -1,4 +1,5 @@
 Type: Structural Audit & Stochastic Monte Carlo Simulation Scope: Finnish Employment Policy (TE24 / 2026 Reforms)
+
 1. Overview
 This repository contains a mathematical and structural audit of the Finnish government's current employment and social security reforms. The project moves away from ideological debate and applies standard system-testing methodologies to measure whether the public infrastructure operates according to its declared specifications.
 The simulation utilizes empirical parameters derived directly from Finlex, Kela, and the OECD to model the economic and cognitive outcomes of a sanctions-based policy versus an asset-based "Skills" paradigm.
